@@ -21,7 +21,10 @@ img {
 }
 header {
   padding: 2%;
-
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 1;
+  left: 2.8%;
 }
 
 .topnav {
@@ -433,12 +436,15 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 748px) {
-  .topnav a, .dropdown .dropbtn {
+  .topnav a {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  header {
+    left: 0;
   }
 }
 
@@ -459,12 +465,12 @@ footer a:hover {
     float: left;
     display: block;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
+  .topnav.responsive {
     display: block;
     width: 100%;
     text-align: left;
+    position: relative;
+    float: none;
   }
 }
 @media (max-width: 680px){
@@ -499,5 +505,8 @@ footer a:hover {
   }
   .redameniti div {
     width: 90%;
+  }
+  #prvideo, #drugideo, #trecideo, #cetvrtideo, #petideo {
+    padding-top: 10%;
   }
 }
